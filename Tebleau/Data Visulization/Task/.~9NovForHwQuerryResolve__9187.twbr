@@ -18,15 +18,15 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='greendestination' inline='true' name='federated.0wnhra311tiqja1a9bfsk1sgmkri' version='18.1'>
+    <datasource caption='greendestination' inline='true' name='federated.0482vpi0tsjrvo11t81pr067q3d3' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='greendestination' name='textscan.02pyrby1yp10b11h3orvb1idivk2'>
-            <connection class='textscan' directory='/Users/mtpc-405/Nikita-iOS/AI-ML/AI-ML/Tebleau/Data Visulization/Task' filename='greendestination.csv' password='' server='' />
+          <named-connection caption='greendestination' name='textscan.0r0aht10outiq91h0cw0v0bqpyuo'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/mtpc-405/Nikita-iOS/AI-ML/AI-ML/Tebleau/Data Visulization/Task/greendestination.csv' dataRefreshTime='' directory='/Users/mtpc-405/Nikita-iOS/AI-ML/AI-ML/Tebleau/Data Visulization/Task' filename='/var/folders/sh/9y9xtrbx6r1c7t4f9ffrmxkh0000gn/T/tableau-temp/1v19oa30d3tlx015po7nd1lp92f5/greendestination.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
-        <relation connection='textscan.02pyrby1yp10b11h3orvb1idivk2' name='greendestination.csv' table='[greendestination#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+        <relation connection='textscan.0r0aht10outiq91h0cw0v0bqpyuo' name='greendestination.csv' table='[greendestination#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AF1471:no:A1:AF1471:1' header='yes' locale='en_IN' separator=','>
             <column datatype='integer' name='Age' ordinal='0' />
             <column datatype='string' name='Attrition' ordinal='1' />
             <column datatype='string' name='BusinessTravel' ordinal='2' />
@@ -70,13 +70,11 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AF1471:no:A1:AF1471:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>33810</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
@@ -89,52 +87,58 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Attrition</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[Attrition]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>Attrition</remote-alias>
             <ordinal>1</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>BusinessTravel</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[BusinessTravel]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>BusinessTravel</remote-alias>
             <ordinal>2</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Department</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[Department]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>Department</remote-alias>
             <ordinal>3</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>DistanceFromHome</remote-name>
@@ -146,7 +150,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Education</remote-name>
@@ -158,22 +165,26 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EducationField</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[EducationField]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>EducationField</remote-alias>
             <ordinal>6</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EmployeeCount</remote-name>
@@ -185,7 +196,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EmployeeNumber</remote-name>
@@ -197,7 +211,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EnvironmentSatisfaction</remote-name>
@@ -209,22 +226,26 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Gender</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[Gender]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>Gender</remote-alias>
             <ordinal>10</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>JobInvolvement</remote-name>
@@ -236,7 +257,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>JobLevel</remote-name>
@@ -248,22 +272,26 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>JobRole</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[JobRole]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>JobRole</remote-alias>
             <ordinal>13</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>JobSatisfaction</remote-name>
@@ -275,22 +303,26 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>MaritalStatus</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[MaritalStatus]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>MaritalStatus</remote-alias>
             <ordinal>15</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>MonthlyIncome</remote-name>
@@ -302,7 +334,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>NumCompaniesWorked</remote-name>
@@ -314,37 +349,42 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Over18</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[Over18]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>Over18</remote-alias>
             <ordinal>18</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>OverTime</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[OverTime]</local-name>
             <parent-name>[greendestination.csv]</parent-name>
             <remote-alias>OverTime</remote-alias>
             <ordinal>19</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PercentSalaryHike</remote-name>
@@ -356,7 +396,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PerformanceRating</remote-name>
@@ -368,7 +411,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>RelationshipSatisfaction</remote-name>
@@ -380,7 +426,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>StandardHours</remote-name>
@@ -392,7 +441,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>StockOptionLevel</remote-name>
@@ -404,7 +456,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>TotalWorkingYears</remote-name>
@@ -416,7 +471,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>TrainingTimesLastYear</remote-name>
@@ -428,7 +486,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>WorkLifeBalance</remote-name>
@@ -440,7 +501,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>YearsAtCompany</remote-name>
@@ -452,7 +516,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>YearsInCurrentRole</remote-name>
@@ -464,7 +531,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>YearsSinceLastPromotion</remote-name>
@@ -476,7 +546,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>YearsWithCurrManager</remote-name>
@@ -488,17 +561,74 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
           </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column aggregation='Sum' datatype='integer' name='[Age]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Age (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[Age]' new-bin='true'>
+          <bin default-name='false' value='&quot;18-25&quot;'>
+            <value>18</value>
+            <value>19</value>
+            <value>20</value>
+            <value>21</value>
+            <value>22</value>
+            <value>23</value>
+            <value>24</value>
+            <value>25</value>
+          </bin>
+          <bin default-name='false' value='&quot;26-35&quot;'>
+            <value>26</value>
+            <value>27</value>
+            <value>28</value>
+            <value>29</value>
+            <value>30</value>
+            <value>31</value>
+            <value>32</value>
+            <value>33</value>
+            <value>34</value>
+            <value>35</value>
+          </bin>
+          <bin default-name='false' value='&quot;35-45&quot;'>
+            <value>36</value>
+            <value>37</value>
+            <value>38</value>
+            <value>39</value>
+            <value>40</value>
+            <value>41</value>
+            <value>42</value>
+            <value>43</value>
+            <value>44</value>
+            <value>45</value>
+          </bin>
+          <bin default-name='false' value='&quot;46-55&quot;'>
+            <value>46</value>
+            <value>47</value>
+            <value>48</value>
+            <value>49</value>
+            <value>50</value>
+            <value>51</value>
+            <value>52</value>
+            <value>53</value>
+            <value>54</value>
+            <value>55</value>
+          </bin>
+          <bin default-name='false' value='&quot;56-60&quot;'>
+            <value>56</value>
+            <value>57</value>
+            <value>58</value>
+            <value>59</value>
+            <value>60</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
       <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
       <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
-      <column caption='Age (group)' datatype='string' name='[Calculation_441423134818123776]' role='dimension' type='nominal'>
-        <calculation class='tableau' formula='IF [Age] &lt;= 25 THEN &apos;18-25&apos;&#10;ELSEIF [Age] &lt;= 35 THEN &apos;26-35&apos;&#10;ELSEIF [Age] &lt;= 45 THEN &apos;36-45&apos;&#10;ELSEIF [Age] &lt;= 55 THEN &apos;46-55&apos;&#10;ELSEIF [Age] &lt;= 60 THEN &apos;56-60&apos;&#10;ELSEIF [Age] &gt; 60 THEN &apos;60+&apos;&#10;ELSE &apos;Unknown/Other&apos; // Catches Nulls or ages below 18&#10;END' />
-      </column>
       <column caption='Distance From Home' datatype='integer' name='[DistanceFromHome]' role='measure' type='quantitative' />
       <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
       <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
@@ -509,7 +639,7 @@
       <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal' />
       <column caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='measure' type='quantitative' />
       <column caption='Marital Status' datatype='string' name='[MaritalStatus]' role='dimension' type='nominal' />
-      <column aggregation='None' caption='Monthly Income (bin)' datatype='integer' name='[Monthly Income (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' datatype='integer' name='[Monthly Income (bin)]' role='dimension' type='quantitative'>
         <calculation class='bin' decimals='3' formula='[MonthlyIncome]' peg='0' size='2000' />
       </column>
       <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
@@ -521,17 +651,16 @@
       <column caption='Standard Hours' datatype='integer' name='[StandardHours]' role='measure' type='quantitative' />
       <column caption='Stock Option Level' datatype='integer' name='[StockOptionLevel]' role='measure' type='quantitative' />
       <column caption='Total Working Years' datatype='integer' name='[TotalWorkingYears]' role='measure' type='quantitative' />
-      <column caption='Training Times Last Year' datatype='integer' name='[TrainingTimesLastYear]' role='dimension' type='quantitative' />
+      <column caption='Training Times Last Year' datatype='integer' name='[TrainingTimesLastYear]' role='measure' type='quantitative' />
       <column caption='Work Life Balance' datatype='integer' name='[WorkLifeBalance]' role='measure' type='quantitative' />
-      <column caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='dimension' type='ordinal' />
       <column caption='Years In Current Role' datatype='integer' name='[YearsInCurrentRole]' role='measure' type='quantitative' />
       <column caption='Years Since Last Promotion' datatype='integer' name='[YearsSinceLastPromotion]' role='measure' type='quantitative' />
       <column caption='Years With Curr Manager' datatype='integer' name='[YearsWithCurrManager]' role='measure' type='quantitative' />
-      <column caption='greendestination.csv' datatype='table' name='[__tableau_internal_object_id__].[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]' role='measure' type='quantitative' />
-      <column-instance column='[MonthlyIncome]' derivation='Avg' name='[avg:MonthlyIncome:qk]' pivot='key' type='quantitative' />
+      <column caption='greendestination.csv' datatype='table' name='[__tableau_internal_object_id__].[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]' role='measure' type='quantitative' />
       <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/sh/9y9xtrbx6r1c7t4f9ffrmxkh0000gn/T/tableau-temp/#TableauTemp_025wxr20t1qre6143f66z1q4onby.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2025 06:59:35 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_19l53rn1fbypnn1b2cs741rn23hb.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/09/2025 05:04:49 AM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -546,7 +675,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>43</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Attrition</remote-name>
@@ -560,8 +689,8 @@
               <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>BusinessTravel</remote-name>
@@ -575,8 +704,8 @@
               <aggregation>Count</aggregation>
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Department</remote-name>
@@ -590,8 +719,8 @@
               <aggregation>Count</aggregation>
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DistanceFromHome</remote-name>
@@ -605,7 +734,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>29</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Education</remote-name>
@@ -619,7 +748,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>EducationField</remote-name>
@@ -633,8 +762,8 @@
               <aggregation>Count</aggregation>
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>EmployeeCount</remote-name>
@@ -648,7 +777,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>EmployeeNumber</remote-name>
@@ -662,7 +791,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>1470</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>EnvironmentSatisfaction</remote-name>
@@ -676,7 +805,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Gender</remote-name>
@@ -690,8 +819,8 @@
               <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>JobInvolvement</remote-name>
@@ -705,7 +834,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>JobLevel</remote-name>
@@ -719,7 +848,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>JobRole</remote-name>
@@ -733,8 +862,8 @@
               <aggregation>Count</aggregation>
               <approx-count>9</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>JobSatisfaction</remote-name>
@@ -748,7 +877,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>MaritalStatus</remote-name>
@@ -762,8 +891,8 @@
               <aggregation>Count</aggregation>
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>MonthlyIncome</remote-name>
@@ -777,7 +906,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>1185</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>NumCompaniesWorked</remote-name>
@@ -791,7 +920,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>10</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Over18</remote-name>
@@ -805,8 +934,8 @@
               <aggregation>Count</aggregation>
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>OverTime</remote-name>
@@ -820,8 +949,8 @@
               <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RGB' />
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>PercentSalaryHike</remote-name>
@@ -835,7 +964,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>15</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>PerformanceRating</remote-name>
@@ -849,7 +978,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>RelationshipSatisfaction</remote-name>
@@ -863,7 +992,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>StandardHours</remote-name>
@@ -877,7 +1006,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>StockOptionLevel</remote-name>
@@ -891,7 +1020,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>TotalWorkingYears</remote-name>
@@ -905,7 +1034,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>40</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>TrainingTimesLastYear</remote-name>
@@ -919,7 +1048,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>WorkLifeBalance</remote-name>
@@ -933,7 +1062,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>YearsAtCompany</remote-name>
@@ -947,7 +1076,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>36</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>YearsInCurrentRole</remote-name>
@@ -961,7 +1090,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>19</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>YearsSinceLastPromotion</remote-name>
@@ -975,7 +1104,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>16</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>YearsWithCurrManager</remote-name>
@@ -989,7 +1118,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>18</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5]</object-id>
+              <object-id>[greendestination.csv_4059399E6B674BDAAB37F484EC72610A]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1005,69 +1134,17 @@
               <bucket>&quot;No&quot;</bucket>
             </map>
           </encoding>
-          <encoding attr='color' field='[:Measure Names]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.0wnhra311tiqja1a9bfsk1sgmkri].[avg:MonthlyIncome:qk]&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;[federated.0wnhra311tiqja1a9bfsk1sgmkri].[avg:Calculation_1531927563346178048:qk]&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;[federated.0wnhra311tiqja1a9bfsk1sgmkri].[cnt:Calculation_1531927563346178048:qk]&quot;</bucket>
-            </map>
-          </encoding>
         </style-rule>
       </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
       </semantic-values>
-      <field-sort-info field-sort-order-type='custom-order'>
-        <field-sort-custom-order field='Age' />
-        <field-sort-custom-order field='Calculation_441423134818123776' />
-        <field-sort-custom-order field='Attrition' />
-        <field-sort-custom-order field='BusinessTravel' />
-        <field-sort-custom-order field='Department' />
-        <field-sort-custom-order field='DistanceFromHome' />
-        <field-sort-custom-order field='Education' />
-        <field-sort-custom-order field='EducationField' />
-        <field-sort-custom-order field='Calculation_1531927563346178048' />
-        <field-sort-custom-order field='EmployeeCount' />
-        <field-sort-custom-order field='EmployeeNumber' />
-        <field-sort-custom-order field='EnvironmentSatisfaction' />
-        <field-sort-custom-order field='Gender' />
-        <field-sort-custom-order field='JobInvolvement' />
-        <field-sort-custom-order field='JobLevel' />
-        <field-sort-custom-order field='JobRole' />
-        <field-sort-custom-order field='JobSatisfaction' />
-        <field-sort-custom-order field='MaritalStatus' />
-        <field-sort-custom-order field='MonthlyIncome' />
-        <field-sort-custom-order field='NumCompaniesWorked' />
-        <field-sort-custom-order field='Over18' />
-        <field-sort-custom-order field='OverTime' />
-        <field-sort-custom-order field='PercentSalaryHike' />
-        <field-sort-custom-order field='PerformanceRating' />
-        <field-sort-custom-order field='RelationshipSatisfaction' />
-        <field-sort-custom-order field='StandardHours' />
-        <field-sort-custom-order field='StockOptionLevel' />
-        <field-sort-custom-order field='TotalWorkingYears' />
-        <field-sort-custom-order field='TrainingTimesLastYear' />
-        <field-sort-custom-order field='WorkLifeBalance' />
-        <field-sort-custom-order field='YearsAtCompany' />
-        <field-sort-custom-order field='YearsInCurrentRole' />
-        <field-sort-custom-order field='YearsSinceLastPromotion' />
-        <field-sort-custom-order field='YearsWithCurrManager' />
-        <field-sort-custom-order field='Geometry (generated)' />
-        <field-sort-custom-order field='Latitude (generated)' />
-        <field-sort-custom-order field='Longitude (generated)' />
-        <field-sort-custom-order field=':Measure Names' />
-        <field-sort-custom-order field='Multiple Values' />
-      </field-sort-info>
       <object-graph>
         <objects>
-          <object caption='greendestination.csv' id='greendestination.csv_A4AFB06522954DC18F01493F6ADED9B5'>
+          <object caption='greendestination.csv' id='greendestination.csv_4059399E6B674BDAAB37F484EC72610A'>
             <properties context=''>
-              <relation connection='textscan.02pyrby1yp10b11h3orvb1idivk2' name='greendestination.csv' table='[greendestination#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <relation connection='textscan.0r0aht10outiq91h0cw0v0bqpyuo' name='greendestination.csv' table='[greendestination#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:AF1471:no:A1:AF1471:1' header='yes' locale='en_IN' separator=','>
                   <column datatype='integer' name='Age' ordinal='0' />
                   <column datatype='string' name='Attrition' ordinal='1' />
                   <column datatype='string' name='BusinessTravel' ordinal='2' />
@@ -1112,68 +1189,81 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Average Income  Per Age Group'>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='greendestination' name='federated.0wnhra311tiqja1a9bfsk1sgmkri' />
-          </datasources>
-          <datasource-dependencies datasource='federated.0wnhra311tiqja1a9bfsk1sgmkri'>
-            <column aggregation='Sum' datatype='integer' name='[Age]' role='dimension' type='ordinal' />
-            <column caption='Age (group)' datatype='string' name='[Calculation_441423134818123776]' role='dimension' type='nominal'>
-              <calculation class='tableau' formula='IF [Age] &lt;= 25 THEN &apos;18-25&apos;&#10;ELSEIF [Age] &lt;= 35 THEN &apos;26-35&apos;&#10;ELSEIF [Age] &lt;= 45 THEN &apos;36-45&apos;&#10;ELSEIF [Age] &lt;= 55 THEN &apos;46-55&apos;&#10;ELSEIF [Age] &lt;= 60 THEN &apos;56-60&apos;&#10;ELSEIF [Age] &gt; 60 THEN &apos;60+&apos;&#10;ELSE &apos;Unknown/Other&apos; // Catches Nulls or ages below 18&#10;END' />
-            </column>
-            <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
-            <column-instance column='[MonthlyIncome]' derivation='Avg' name='[avg:MonthlyIncome:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Calculation_441423134818123776]' derivation='None' name='[none:Calculation_441423134818123776:nk]' pivot='key' type='nominal' />
-          </datasource-dependencies>
-          <aggregation value='true' />
-        </view>
-        <style />
-        <panes>
-          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <text column='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[avg:MonthlyIncome:qk]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[avg:MonthlyIncome:qk]</rows>
-        <cols>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Calculation_441423134818123776:nk]</cols>
-      </table>
-      <simple-id uuid='{121B0CB3-68C3-4D4A-8664-B811C431DD0C}' />
-    </worksheet>
-    <worksheet name='Employee Count By Age Group'>
+    <worksheet name='Sheet 1'>
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+            <run bold='true' fontalignment='1'>Employe Cound By Age Group</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='greendestination' name='federated.0wnhra311tiqja1a9bfsk1sgmkri' />
+            <datasource caption='greendestination' name='federated.0482vpi0tsjrvo11t81pr067q3d3' />
           </datasources>
-          <datasource-dependencies datasource='federated.0wnhra311tiqja1a9bfsk1sgmkri'>
-            <column aggregation='Sum' datatype='integer' name='[Age]' role='dimension' type='ordinal' />
-            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
-            <column caption='Age (group)' datatype='string' name='[Calculation_441423134818123776]' role='dimension' type='nominal'>
-              <calculation class='tableau' formula='IF [Age] &lt;= 25 THEN &apos;18-25&apos;&#10;ELSEIF [Age] &lt;= 35 THEN &apos;26-35&apos;&#10;ELSEIF [Age] &lt;= 45 THEN &apos;36-45&apos;&#10;ELSEIF [Age] &lt;= 55 THEN &apos;46-55&apos;&#10;ELSEIF [Age] &lt;= 60 THEN &apos;56-60&apos;&#10;ELSEIF [Age] &gt; 60 THEN &apos;60+&apos;&#10;ELSE &apos;Unknown/Other&apos; // Catches Nulls or ages below 18&#10;END' />
+          <datasource-dependencies datasource='federated.0482vpi0tsjrvo11t81pr067q3d3'>
+            <column datatype='string' name='[Age (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[Age]' new-bin='true'>
+                <bin default-name='false' value='&quot;18-25&quot;'>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                </bin>
+                <bin default-name='false' value='&quot;26-35&quot;'>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                </bin>
+                <bin default-name='false' value='&quot;35-45&quot;'>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                </bin>
+                <bin default-name='false' value='&quot;46-55&quot;'>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                  <value>55</value>
+                </bin>
+                <bin default-name='false' value='&quot;56-60&quot;'>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                </bin>
+              </calculation>
             </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
             <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
             <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Calculation_441423134818123776]' derivation='None' name='[none:Calculation_441423134818123776:nk]' pivot='key' type='nominal' />
             <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
@@ -1186,49 +1276,203 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Attrition:nk]' />
-              <text column='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[sum:EmployeeCount:qk]' />
+              <color column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Attrition:nk]' />
+              <text column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[sum:EmployeeCount:qk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Calculation_441423134818123776:nk]</rows>
-        <cols>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[sum:EmployeeCount:qk]</cols>
-        <show-full-range>
-          <column>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[Age (bin)]</column>
-        </show-full-range>
+        <rows>[federated.0482vpi0tsjrvo11t81pr067q3d3].[Age (group)]</rows>
+        <cols>[federated.0482vpi0tsjrvo11t81pr067q3d3].[sum:EmployeeCount:qk]</cols>
       </table>
-      <simple-id uuid='{7387C89D-64F5-4350-A348-B94507C76591}' />
+      <simple-id uuid='{BEA2CAAB-9276-4C23-B7B9-FA831DCD3891}' />
     </worksheet>
-    <worksheet name='Employee Count By Age Group (2)'>
+    <worksheet name='Sheet 2'>
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+            <run bold='true' fontalignment='1'>Employee Cound By Income</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='greendestination' name='federated.0wnhra311tiqja1a9bfsk1sgmkri' />
+            <datasource caption='greendestination' name='federated.0482vpi0tsjrvo11t81pr067q3d3' />
           </datasources>
-          <datasource-dependencies datasource='federated.0wnhra311tiqja1a9bfsk1sgmkri'>
+          <datasource-dependencies datasource='federated.0482vpi0tsjrvo11t81pr067q3d3'>
             <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
             <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
-            <column aggregation='None' caption='Monthly Income (bin)' datatype='integer' name='[Monthly Income (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' datatype='integer' name='[Monthly Income (bin)]' role='dimension' type='quantitative'>
               <calculation class='bin' decimals='3' formula='[MonthlyIncome]' peg='0' size='2000' />
             </column>
             <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
             <column-instance column='[MonthlyIncome]' derivation='Count' name='[cnt:MonthlyIncome:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Monthly Income (bin)]' derivation='None' name='[none:Monthly Income (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Monthly Income (bin)]' derivation='None' name='[none:Monthly Income (bin):qk]' pivot='key' type='quantitative' />
             <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Monthly Income (bin):qk]' field-type='quantitative' major-origin='0' major-spacing='2000' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0482vpi0tsjrvo11t81pr067q3d3].[cnt:MonthlyIncome:qk]' field-type='quantitative' major-origin='0' major-spacing='200' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Attrition:nk]' />
+              <text column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[sum:EmployeeCount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0482vpi0tsjrvo11t81pr067q3d3].[cnt:MonthlyIncome:qk]</rows>
+        <cols>[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Monthly Income (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0482vpi0tsjrvo11t81pr067q3d3].[Monthly Income (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{68D35719-50BE-4684-9469-26E0708A0127}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Employee Count By Number of Years At The Company</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='greendestination' name='federated.0482vpi0tsjrvo11t81pr067q3d3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0482vpi0tsjrvo11t81pr067q3d3'>
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='dimension' type='ordinal' />
+            <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YearsAtCompany]' derivation='None' name='[none:YearsAtCompany:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0482vpi0tsjrvo11t81pr067q3d3].[sum:EmployeeCount:qk]' field-type='quantitative' major-origin='0' major-spacing='50' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Attrition:nk]' />
+              <text column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[sum:EmployeeCount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='-90' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0482vpi0tsjrvo11t81pr067q3d3].[sum:EmployeeCount:qk]</rows>
+        <cols>[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:YearsAtCompany:ok]</cols>
+      </table>
+      <simple-id uuid='{FE16005B-8AC4-4F4E-BB62-823BF99D6E1D}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='greendestination' name='federated.0482vpi0tsjrvo11t81pr067q3d3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0482vpi0tsjrvo11t81pr067q3d3'>
+            <column datatype='string' name='[Age (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[Age]' new-bin='true'>
+                <bin default-name='false' value='&quot;18-25&quot;'>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                </bin>
+                <bin default-name='false' value='&quot;26-35&quot;'>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                </bin>
+                <bin default-name='false' value='&quot;35-45&quot;'>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                </bin>
+                <bin default-name='false' value='&quot;46-55&quot;'>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                  <value>55</value>
+                </bin>
+                <bin default-name='false' value='&quot;56-60&quot;'>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
+            <column-instance column='[MonthlyIncome]' derivation='Avg' name='[avg:MonthlyIncome:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
@@ -1240,30 +1484,89 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Attrition:nk]' />
-              <text column='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[sum:EmployeeCount:qk]' />
+              <text column='[federated.0482vpi0tsjrvo11t81pr067q3d3].[avg:MonthlyIncome:qk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[cnt:MonthlyIncome:qk]</rows>
-        <cols>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Monthly Income (bin):ok]</cols>
-        <show-full-range>
-          <column>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[Age (bin)]</column>
-          <column>[federated.0wnhra311tiqja1a9bfsk1sgmkri].[Monthly Income (bin)]</column>
-        </show-full-range>
+        <rows>[federated.0482vpi0tsjrvo11t81pr067q3d3].[avg:MonthlyIncome:qk]</rows>
+        <cols>[federated.0482vpi0tsjrvo11t81pr067q3d3].[Age (group)]</cols>
       </table>
-      <simple-id uuid='{5B1B38E8-D69C-4D92-A3EB-DA50D21E06C5}' />
+      <simple-id uuid='{49D2B938-F426-4965-9036-F2A3F7F1E79D}' />
     </worksheet>
-    <worksheet name='Sheet 4'>
+    <worksheet name='Sheet 5'>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='greendestination' name='federated.0482vpi0tsjrvo11t81pr067q3d3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0482vpi0tsjrvo11t81pr067q3d3'>
+            <column datatype='string' name='[Age (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[Age]' new-bin='true'>
+                <bin default-name='false' value='&quot;18-25&quot;'>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                </bin>
+                <bin default-name='false' value='&quot;26-35&quot;'>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                </bin>
+                <bin default-name='false' value='&quot;35-45&quot;'>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                </bin>
+                <bin default-name='false' value='&quot;46-55&quot;'>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                  <value>55</value>
+                </bin>
+                <bin default-name='false' value='&quot;56-60&quot;'>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
+            <column-instance column='[MonthlyIncome]' derivation='Avg' name='[avg:MonthlyIncome:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style />
@@ -1273,16 +1576,22 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows />
-        <cols />
+        <rows>[federated.0482vpi0tsjrvo11t81pr067q3d3].[Age (group)]</rows>
+        <cols>[federated.0482vpi0tsjrvo11t81pr067q3d3].[avg:MonthlyIncome:qk]</cols>
       </table>
-      <simple-id uuid='{DCA60682-6C6B-4741-BECC-024210BFD370}' />
+      <simple-id uuid='{FDE4EBA7-3489-4F7C-AD2E-B4270E5866EF}' />
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' name='Employee Count By Age Group'>
+    <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1304,13 +1613,16 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Attrition:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Attrition:nk]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{534F3C43-CBA7-463A-BBDB-50B15D7A9B76}' />
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B8E59CFF-8B67-44BA-A665-1A47D512F21A}' />
     </window>
-    <window class='worksheet' name='Employee Count By Age Group (2)'>
+    <window class='worksheet' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1332,13 +1644,44 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0wnhra311tiqja1a9bfsk1sgmkri].[none:Attrition:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Attrition:nk]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{A9FC130D-3FAB-404A-A044-F633744D8263}' />
+      <simple-id uuid='{12B7FBC8-6781-4F44-A630-D00520C44B64}' />
     </window>
-    <window class='worksheet' name='Average Income  Per Age Group'>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0482vpi0tsjrvo11t81pr067q3d3].[none:Attrition:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4A27269C-FDDF-4B64-868B-B5889E0CDCA3}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1359,9 +1702,12 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{4CE8BB0F-FAF2-45A4-98B0-0C6648C6E1E1}' />
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{68853A54-CB73-446C-AD3F-F9A08AB1753C}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 4'>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1382,7 +1728,7 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{23D121B6-1943-4CB9-BAAB-5460D72D2B66}' />
+      <simple-id uuid='{6EE53D29-B967-48D7-9B31-EC7CF6FD78CE}' />
     </window>
   </windows>
 </workbook>
